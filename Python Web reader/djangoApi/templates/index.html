@@ -1,0 +1,16 @@
+<!-- djangoApi/templates/index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>URL read</title>
+    </head>
+    <body>
+        <h2>Reader API</h2>
+        <form action="{% url 'api:reader' %}" method="get">
+          <input type="text" name="link">
+          <button type="submit">Pull Webpage</button>
+        </form>
+        <p>{{ url }}</p>
+    </body>
+</html>
